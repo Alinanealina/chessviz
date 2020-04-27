@@ -16,7 +16,7 @@ int main()
     do {
         printf("\n");
         scanf("%s", hod);
-        moveP(chess);
+        moveP(chess, hod);
         system("CLS");
         printChess(chess);
     } while (1);
