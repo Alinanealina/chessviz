@@ -38,13 +38,10 @@ int coordchange(char c)
         return 10;
     }
 }
-void moveP(char chess[8][9])
+void moveP(char chess[8][9], char hod[5])
 {
-    char hod[5];
     int x, y, x0, y0;
     while (1) {
-        printf("\n");
-        scanf("%s", hod);
         if ((hod[2] == '-') || (hod[2] == 'x')) {
             y0 = coordchange(hod[0]);
             x0 = coordchange(hod[1]);
@@ -62,13 +59,15 @@ void moveP(char chess[8][9])
                     break;
                 } else {
                     printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
-                    continue;
+                    break;
                 }
             } else {
                 printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
-                continue;
+                break;
             }
-        } else
+        } else {
             printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
+            break;
+        }
     }
 }
