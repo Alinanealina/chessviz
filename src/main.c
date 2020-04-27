@@ -11,8 +11,11 @@ int main()
                         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '6'},
                         {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', '7'},
                         {'N', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', '8'}};
+    char hod[5];
     printChess(chess);
     do {
+        printf("\n");
+        scanf("%s", hod);
         moveP(chess);
         system("CLS");
         printChess(chess);
