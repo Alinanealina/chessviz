@@ -59,13 +59,15 @@ void moveP(char chess[8][9], char hod[5])
                     break;
                 } else {
                     printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
-                    continue;
+                    break;
                 }
             } else {
                 printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
-                continue;
+                break;
             }
-        } else
+        } else {
             printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
+            break;
+        }
     }
 }
