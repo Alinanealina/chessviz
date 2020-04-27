@@ -1,4 +1,4 @@
-#include "headerFile.h"
+#include "head.h"
 #include <conio.h>
 #include <stdio.h>
 #include <stdlib.h>
