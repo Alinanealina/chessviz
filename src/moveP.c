@@ -43,7 +43,7 @@ void moveP(char chess[8][9])
     char hod[5];
     int x, y, x0, y0;
     while (1) {
-      printf("\n");
+        printf("\n");
         gets(hod);
         if ((hod[2] == '-') || (hod[2] == 'x')) {
             y0 = coordchange(hod[0]);
