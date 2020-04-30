@@ -1,13 +1,13 @@
-g = gcc
+g = g++
 CFLAGS = -Wall -Werror -MP -MMD
 
 .PHONY: clean run all
 
-all: ./bin/Chess.exe
+all: ./bin/chess.exe
 
 -include build/*.d
 
-./bin/Chess.exe: ./build/main.o ./build/printChess.o ./build/moveP.o
+./bin/chess.exe: ./build/main.o ./build/printChess.o ./build/moveP.o
 	$(g) $(CFLAGS) -o ./bin/chess.exe ./build/main.o ./build/moveP.o ./build/printChess.o -lm
 
 ./build/main.o: ./src/main.c ./src/head.h
@@ -23,4 +23,4 @@ clean:
 	rm -rf build/*.o build/*.d
 
 run:
-	./bin/Chess.exe
+	./bin/chess.exe
