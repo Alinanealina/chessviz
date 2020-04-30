@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <iostream>
+
+using namespace std;
 int coordchange(char c)
 {
     switch (c) {
@@ -58,15 +61,15 @@ void moveP(char chess[8][9], char hod[5])
                     chess[x][y] = 'p';
                     break;
                 } else {
-                    printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
+                    cout << "Nevozmozhnyi hod. Vvedite zanovo. " << endl;
                     break;
                 }
             } else {
-                printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
+                cout << "Nevozmozhnyi hod. Vvedite zanovo." << endl;
                 break;
             }
         } else {
-            printf("\n Nevozmozhnyi hod. Vvedite zanovo. ");
+            cout << "Nevozmozhnyi hod. Vvedite zanovo." << endl;
             break;
         }
     }
