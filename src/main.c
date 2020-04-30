@@ -21,6 +21,6 @@ int main()
         cin >> hod;
         moveP(chess, hod);
         printChess(chess);
-      }
+    }
     return 0;
 }
